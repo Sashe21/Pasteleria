@@ -6,6 +6,7 @@ import SearchDialog from '../Search';
 import LikedCakesSheet from '../LikedCakes';
 import AuthDropdown from '../AuthDropdown';
 import ShoppingCartSheet from '../ShoppingCart';
+import Link from 'next/link';
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -49,11 +50,14 @@ const Navbar = () => {
 
       {/* Logo (Centered) */}
       <div className="flex-grow flex justify-center">
-        <a href="/" className={cn(
-          "text-4xl font-extrabold text-pink-500 flex-shrink-0"
-        )} style={{ fontFamily: "Playfair Display, serif" }}>
-          Pasteleria Ines
-        </a>
+        import Link from "next/link"
+
+<Link href="/" className={cn(
+  "text-4xl font-extrabold text-pink-500 flex-shrink-0"
+)} style={{ fontFamily: "Playfair Display, serif" }}>
+  Pasteleria Ines
+</Link>
+
       </div>
 
       {/* Right Icons */}
